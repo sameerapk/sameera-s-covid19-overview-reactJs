@@ -12,9 +12,10 @@ class App extends Component {
         this.setState({data: fetchedData})
     }
     render() {
+        const {data} = this.state
         return (
             <div className={styles.container}>
-                <Cards />
+                <Cards data = {data}/>
                 <CountryPicker />
                 <Chart />
                 

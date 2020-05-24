@@ -12,7 +12,7 @@ const Chart = ({data:{confirmed, recovered,deaths}, country}) => {
            setDailyData(await fetchDailyData())
        }
        fetchApi()         
-    })
+    },[])
 
     const lineChart = (
         dailyData.length ? (

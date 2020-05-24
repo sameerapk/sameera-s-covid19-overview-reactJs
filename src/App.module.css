@@ -1,8 +1,11 @@
 body {
     background-color: rgb(250,250,250);
+    
 }
 
 .container {
+    width: 80%;
+    margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
